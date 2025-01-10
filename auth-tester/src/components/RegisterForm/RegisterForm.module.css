@@ -1,0 +1,109 @@
+.form {
+    background-color: #1a1a1a;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.inputGroup {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    background-color: #262626;
+    color: #fff;
+}
+
+.input:focus {
+    border-color: #58bf91;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(88, 191, 145, 0.2);
+    background-color: #2d2d2d;
+}
+
+.input::placeholder {
+    color: #6b7280;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #58bf91;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #3f8867;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(88, 191, 145, 0.3);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Adding some hover states for better interactivity */
+.input:hover {
+    border-color: #404040;
+    background-color: #2d2d2d;
+}
+
+/* Optional: Added disabled states */
+.button:disabled {
+    background-color: #374151;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.input:disabled {
+    background-color: #1f1f1f;
+    border-color: #2d2d2d;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* Optional: Error states */
+.input.error {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.input.error:focus {
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+/* Adding subtle transitions for all interactive elements */
+.form, .input, .button {
+    transition: all 0.2s ease;
+}
