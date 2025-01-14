@@ -89,6 +89,11 @@
     object-fit: cover;
 }
 
+.error {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
 @media (max-width: 640px) {
     .nav {
         padding: 1rem;

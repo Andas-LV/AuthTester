@@ -6,6 +6,11 @@ export async function getUserMe(): Promise<User> {
     return data;
 }
 
+export async function updateUserMe(body: Partial<User>): Promise<User> {
+    const { data } = await axiosInstance.patch('/user/me/update/', body);
+    return data;
+}
+
 export async function uploadAvatar(avatarFile: File) {
     const formData = new FormData();
     formData.append('avatar', avatarFile);

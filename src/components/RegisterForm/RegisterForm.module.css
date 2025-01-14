@@ -94,13 +94,9 @@
 }
 
 /* Optional: Error states */
-.input.error {
-    border-color: #ef4444;
-    background-color: rgba(239, 68, 68, 0.1);
-}
-
-.input.error:focus {
-    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+.error {
+    color: rgb(174, 54, 54);
+    margin: 10px 0 0 10px;
 }
 
 /* Adding subtle transitions for all interactive elements */
